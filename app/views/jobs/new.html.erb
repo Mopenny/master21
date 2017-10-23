@@ -1,0 +1,23 @@
+<h1> Create new job </h1>
+
+<%= form_with model: @job do |form| %>
+  <p>
+    <%= form.label :title %><br>
+    <%= form.text_field :title %>
+  </p>
+
+  <p>
+    <%= form.label :from %><br>
+    <%= form.date_field :from %><br>
+  </p>
+
+  <p>
+    <%= form.label :to %><br>
+    <%= form.date_field :to %><br>
+  </p>
+
+  <p>
+    <%= form.submit 'Send' %><br>
+    <%= form.submit %>
+  </p>
+<% end %>

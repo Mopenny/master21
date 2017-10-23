@@ -1,0 +1,14 @@
+<h1> About </h1>
+
+<h2> Hello world; my work life: </h2>
+
+<ul>
+<% @jobs.each do |job| %>
+  <li> <%= job.title %><br></li>
+  <li> <%= job.description %><br></li>
+  <li> <%= job.employer %><br></li>
+  <li> <%= job.from %> - <%= job.to %><br></li>
+  <li> <%= job.academic_degreer %><br></li>
+  <br/>
+  <% end %>
+</ul>
